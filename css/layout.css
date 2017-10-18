@@ -3,7 +3,7 @@ html {
 }
 
 header,
-main,
+#page-content,
 footer {
     padding-left: 0;
 }
@@ -45,7 +45,7 @@ nav .brand-logo {
 #nav-header h1 {
     margin:0;
     padding:0;
-    font-size:28px;
+    font-size:26px;
     color:#fff;
 }
 
@@ -56,6 +56,16 @@ nav .brand-logo {
     color:#fff;
 }
 
+.social-button {
+    font-size:72%;
+    padding-top:4px;
+}
+
+#about-quick-facts .card-title,
+#about-quick-facts p {
+    white-space: nowrap;
+}
+
 
 @media only screen and (min-width: 601px) {
     #menu-button {
@@ -63,9 +73,15 @@ nav .brand-logo {
     }
 }
 
+@media only screen and (min-width:993px) and (max-width:1200px) {
+    .l-hide {
+       display:none; 
+    }
+}
+
 @media only screen and (min-width: 993px) {
     header,
-    main,
+    #page-content,
     footer {
         padding-left: 300px;
     }
