@@ -2,6 +2,11 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+body {
+    margin-top:0;
+    padding-top:0;
+}
+
 header,
 #page-content,
 footer {
@@ -59,6 +64,15 @@ nav .brand-logo {
 .social-button {
     font-size:72%;
     padding-top:4px;
+}
+
+#about-section {
+    padding-top:40px;
+    padding-bottom:19px;
+    border-bottom:1px solid #bdbdbd;
+}
+#about-section h2 {
+    margin-top:0;
 }
 
 #about-quick-facts .card-title,
