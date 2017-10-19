@@ -90,14 +90,45 @@
                 <i class="large material-icons">message</i>
             </a>
             <ul>
-                <li><a href="#" class="btn-floating yellow darken-2 tooltipped waves-effect waves-light" data-position="left" data-tooltip="Email"><i class="large material-icons">email</i></a></li>
+                <li><a href="#email-modal" class="btn-floating yellow darken-2 tooltipped waves-effect waves-light modal-trigger" data-position="left" data-tooltip="Email"><i class="large material-icons">email</i></a></li>
                 <li><a href="#" target="_blank" class="btn-floating social-button tooltipped waves-effect waves-light" style="background-color:#1da1f2;" data-position="left" data-tooltip="Twitter"><span class="fa fa-2x fa-twitter"></span></a></li>
                 <li><a href="#" target="_blank" class="btn-floating social-button tooltipped waves-effect waves-light" style="background-color:#0077b5;" data-position="left" data-tooltip="LinkedIn"><span class="fa fa-2x fa-linkedin"></span></a></li>
                 <li><a href="#" target="_blank" class="btn-floating social-button tooltipped waves-effect waves-light" style="background-color:#f48024;" data-position="left" data-tooltip="Stack Overflow"><span class="fa fa-2x fa-stack-overflow"></span></a></li>
                 <li><a href="#" target="_blank" class="btn-floating social-button tooltipped waves-effect waves-light" style="background-color:#6e5494;" data-position="left" data-tooltip="Github"><span class="fa fa-2x fa-github"></span></a></li>
             </ul>
         </div>
-
+        
+        <div id="email-modal" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h4>Email Form</h4>
+                <form class="row">
+                    <div class="input-field col s12 l6">
+                        <input id="email-form-name" type="text" />
+                        <label for="email-form-name">Your Name</label>
+                    </div>
+                    <div class="input-field col s12 l6">
+                        <input id="email-form-email" type="email" />
+                        <label for="email-form-email">Your Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="email-form-subject" type="text" />
+                        <label for="email-form-subject">Subject</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <textarea id="email-form-message" class="materialize-textarea" style="height:100px;"></textarea>
+                        <label for="email-form-message">Message</label>
+                    </div>
+                    <div class="col s12">
+                        <input type="checkbox" id="email-form-copy-self" />
+                        <label for="email-form-copy-self">Send a copy of the message to yourself</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-grey btn-flat">Cancel</a>
+                <a href="#!" class="waves-effect waves-light purple btn">Send</a>
+            </div>
+        </div>
     
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>

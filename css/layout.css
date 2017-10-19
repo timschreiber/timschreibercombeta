@@ -68,7 +68,7 @@ nav .brand-logo {
 
 #about-section {
     padding-top:40px;
-    padding-bottom:19px;
+    padding-bottom:24px;
     border-bottom:1px solid #bdbdbd;
 }
 #about-section h2 {
@@ -80,6 +80,30 @@ nav .brand-logo {
     white-space: nowrap;
 }
 
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field textarea:focus + label {
+    color: #9c27b0 !important;
+}
+
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field textarea:focus {
+    border-bottom: 1px solid #9c27b0 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+}
+
+input[type=checkbox] + label:before {
+    border: 2px solid #9e9e9e;
+    background: transparent;
+}
+
+input[type=checkbox]:checked + label:before {
+    border: 2px solid transparent;
+    border-bottom: 2px solid #9c27b0;
+    border-right: 2px solid #9c27b0;
+    background: transparent;
+}
 
 @media only screen and (min-width: 601px) {
     #menu-button {
